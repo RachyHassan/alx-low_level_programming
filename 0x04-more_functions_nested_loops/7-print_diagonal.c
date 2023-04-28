@@ -1,0 +1,27 @@
+#include "main.h"
+/**
+  * print_diagonal - entry point
+  * @n: integer
+  * return: always 0
+  */
+void print_diagonal(int n)
+{
+	int b, c;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (b = 0; b < n; b++)
+		{
+			for (c = 0; c < b; c++)
+			{
+				_putchar(32);
+			}
+			_putchar(92);
+			_putchar('\n');
+		}
+	}
+}
