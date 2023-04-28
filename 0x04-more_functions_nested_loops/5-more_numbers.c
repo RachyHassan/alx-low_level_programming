@@ -7,14 +7,14 @@ void more_numbers(void)
 {
 	int a, b;
 
-	for (a = 0, a <= 10; a++)
+	for (a = 0; a <= 10; a++)
 	{
-		for (y = 0; y <= 14; y++)
+		for (b = 0; b <= 14; b++)
 		{
-			if (y >= 10)
+			if (b >= 10)
 			{
-				_putchar((y / 10) + 48);
-				_putchar((y % 10) + 48);
+				_putchar((b / 10) + 48);
+				_putchar((b % 10) + 48);
 			}
 		}
 		_putchar('\n');
