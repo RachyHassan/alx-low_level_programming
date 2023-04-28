@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
   * print_most_numbers - entry point
   * description: print numbers
