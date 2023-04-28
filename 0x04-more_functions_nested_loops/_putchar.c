@@ -1,2 +1,15 @@
+#include <stdio.h>
 #include "main.h"
-int _putchar(char c);
+/**
+  * _putchar - Entry point
+  * @c: integer
+  * Return: answer
+  */
+int _putchar(char c)
+{
+	c = 'V';
+
+	_putchar(c);
+
+	return (0);
+}
