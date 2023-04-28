@@ -1,13 +1,14 @@
-#include "main.h"
+include "main.c"
 /**
- *print_most_numbers - Entry point
-  * Return: always 0
+  * print_most_numbers - entry point
+  * description: print numbers
+  * Return: numbers
   */
 void print_most_numbers(void)
 {
-	int a;
+	int a = 0;
 
-	for (a = 0; a <= 9; a++)
+	for (; a <= 9; a++)
 	{
 		if (a == 2 || a == 4)
 		{
@@ -17,5 +18,6 @@ void print_most_numbers(void)
 		{
 			_putchar(a + '0');
 		}
-		_putchar('\n');
+	}
+		_putchar('\n')
 }
