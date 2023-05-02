@@ -15,10 +15,10 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (a = 0 a < 100; a++)
+	for (a = 0; a < 100; a++)
 	{
 		pass[a] = rand() % 78;
-		b += (pass[i] + '0');
+		b += (pass[a] + '0');
 		putchar(pass[a] + '0');
 		if ((2772 - b) - '0' < 78)
 		{
