@@ -10,6 +10,7 @@
 int check_num(char *str)
 {
 	unsigned int v;
+
 	v = 0;
 
 	while (v < strlen(str))
