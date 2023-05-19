@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define ERR_MSG "Error"
@@ -34,15 +33,6 @@ int _strlen(char *s)
 		w++;
 	}
 	return (w);
-}
-/**
- * _putchar - prints out character
- * @c: character
- * Return: On success 1.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
 
 /**
@@ -94,11 +84,11 @@ int main(int argc, char *argv[])
 		if (r[i])
 			a = 1;
 		if (a)
-			_putchar(r[1] + '0');
+			putchar(r[1] + '0');
 	}
 	if (!a)
-		_putchar('0');
-	_putchar('\n');
+		putchar('0');
+	putchar('\n');
 	free(r);
 	return (0);
 }
