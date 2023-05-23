@@ -23,7 +23,7 @@ int _strlen(char *s)
  * @src: pointer 2
  * Return: pointer to p1
  */
-char *_strcpy(char *dest, chhar *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len, v;
 
@@ -46,7 +46,7 @@ char *_strcpy(char *dest, chhar *src)
  * @owner: variable 3
  * Return: pointer to new dog if successful
  */
-dog_t *new_dog(char *name, float *age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int len1, len2;
@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float *age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = mallox(sizeof(char) * (len2 + 1));
+	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
 		free(dog);
