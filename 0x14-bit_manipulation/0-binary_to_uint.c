@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * binary_to_unit - changes binary to integers
- * @b - string
+ * binary_to_uint - changes binary to integers
+ * @b: string
  * Return: integer
  */
 
@@ -9,7 +9,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int p;
 	unsigned int int_val = 0;
-	
+
 	if (!b)
 		return (0);
 	for (p = 0; b[p]; p++)
