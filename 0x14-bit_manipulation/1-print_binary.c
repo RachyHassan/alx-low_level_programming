@@ -26,4 +26,6 @@ void print_binary(unsigned long int n)
 	for (j = m - 1; j >= 0; j--)
 	{
 		_putchar(binary_array[j] + '0');
+	}
+		return;
 }
