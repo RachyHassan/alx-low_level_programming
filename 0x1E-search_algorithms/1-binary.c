@@ -5,7 +5,7 @@
  * @array: pointer to the first element
  * @size: number of elements in array
  * @value: value to search for
- * return: index where value islocated
+ * Return: index where value islocated
  * if value is not present, return -1
  * if array is NULL, return -1
  */
@@ -13,7 +13,7 @@ int binary_search(int *array, size_t size, int value)
 {
 	int i;
 	int low_index = 0;
-	int high_index = size -1;
+	int high_index = size - 1;
 	int middle_index;
 
 	if (array == NULL || size == 0)
@@ -33,7 +33,7 @@ int binary_search(int *array, size_t size, int value)
 			}
 		}
 		printf("\n");
-		
+
 		if (array[middle_index] == value)
 		{
 			printf("Found %d at index: %d\n", value, middle_index);
@@ -44,7 +44,7 @@ int binary_search(int *array, size_t size, int value)
 		{
 			high_index = middle_index - 1;
 		}
-		
+
 		else
 		{
 			low_index = middle_index + 1;
